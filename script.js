@@ -24,12 +24,12 @@ for (let i = 0; i < id.length; i++) {
     const result = document.createElement('p');
      result.innerHTML =
           `<div class="single-result row align-items-center my-3 p-3">
-          <div class="col-md-2 "><img src="${element.album.cover}" alt=""></div> 
-          <div class="col-md-6 "><h4 class="lyrics-name" >
+          <div class="col-md-2 col-sm-2 "><img src="${element.album.cover}" alt=""></div> 
+          <div class="col-md-6 col-sm-6"><h4 class="lyrics-name" >
           ${element.title}
         </h4> <p class="author lead"> ${element.album.title} By <span>${element.artist.name}</span></p>
         </div> 
-        <div class="col-md-4 text-md-right text-center"> <button class="btn btn-success" onclick="getLyrics('${element.artist.name}','${element.title}','${element.title}','${element.artist.name}')";>Get Lyrics</button> </div> </div> </div>`;
+        <div class="col-md-4 col-sm-4 text-md-right text-center"> <button class="btn btn-success" onclick="getLyrics('${element.artist.name}','${element.title}','${element.title}','${element.artist.name}')";>Get Lyrics</button> </div> </div> </div>`;
         songResult.appendChild(result); 
         }
        

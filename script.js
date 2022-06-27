@@ -54,6 +54,8 @@ function getLyrics(artist,title,songTitle,artistName) {
             <h5>${artistName}</h5>
             <br>
             <pre>${data.lyrics}</pre>
+
+            <button class="btn go-back text-white" onclick="goBack()"> &lsaquo; go back</button>
             </div>`;
             lyricsPart.appendChild(lyrics);
             document.getElementById('inputLyrics').value ='';

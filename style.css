@@ -3,7 +3,8 @@ body{
     color: #ffffff;
     background-image: url(images/bg-image.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    width:100%;
+    height: 100%;
     background-position: top;
 }
 
@@ -18,7 +19,7 @@ body{
     padding: 9px 20px;
 }
 
-.btn-privious{
+.btn-previous{
     background: rgba(255, 255, 255, 0.2);
     color: #ffffff;
 }
@@ -27,8 +28,6 @@ body{
 }
 .search-box{
     position: relative;
-
-    
 }
 .box{
     height: 50px;
@@ -42,11 +41,10 @@ body{
 .single-result{
     background: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
+    width: 100%;
+    height: 13%;
 }
 .single-result img{
    width: 100%;
-    
-    
 
 }
-

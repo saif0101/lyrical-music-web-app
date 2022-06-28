@@ -24,8 +24,8 @@ for (let i = 0; i < id.length; i++) {
     const result = document.createElement('p');
      result.innerHTML =
           `<div class="single-result row align-items-center my-3 p-3">
-          <div class="col-md-2 col-sm-2 "><img src="${element.album.cover}" alt=""></div> 
-          <div class="col-md-6 col-sm-6"><h4 class="lyrics-name" >
+          <div class="col-md-2"><img src="${element.album.cover}" alt=""></div> 
+          <div class="col-md-6"><h4 class="lyrics-name" >
           ${element.title}
         </h4> <p class="author lead"> ${element.album.title} By <span>${element.artist.name}</span></p>
         </div> 
@@ -49,13 +49,13 @@ function getLyrics(artist,title,songTitle,artistName) {
         
             const lyrics = document.createElement('p')
             lyrics.innerHTML = ` <div class= "text-center lyrics-text-white">
-            <button class="btn go-back text-white" onclick="goBack()"> &lsaquo; go back</button>
+            <button class="btn go-back text-white btn-previous" onclick="goBack()"> &lsaquo; go back</button>
             <h3>${songTitle}</h3>
             <h5>${artistName}</h5>
             <br>
             <pre>${data.lyrics}</pre>
 
-            <button class="btn go-back text-white" onclick="goBack()"> &lsaquo; go back</button>
+            <button class="btn go-back text-white btn-previous" onclick="goBack()"> &lsaquo; go back</button>
             </div>`;
             lyricsPart.appendChild(lyrics);
             document.getElementById('inputLyrics').value ='';

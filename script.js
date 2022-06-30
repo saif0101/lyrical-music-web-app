@@ -38,6 +38,7 @@ for (let i = 0; i < id.length; i++) {
 
 // get lyrics
 function getLyrics(artist,title,songTitle,artistName) {
+    document.getElementById('lyrics-part').innerHTML ='';
         fetch (`https://api.lyrics.ovh/v1/${artist}/${title}`)
         .then(res => res.json())
         .then(data=>{
